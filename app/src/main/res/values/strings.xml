@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiPrimeraApp</string>
+    <string name="saludo">Hola a todo el mundo!</string>
+    <string name="msgError">Error. Hardcodear no es bueno</string>
+</resources>
