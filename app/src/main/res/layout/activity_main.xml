@@ -54,6 +54,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textAutoComplete"/>
+
+        <android.widget.Button
+            android:id="@+id/awbAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangulo"
+            android:text="Aceptar" />
+
+        <android.widget.Button
+            android:id="@+id/awbRechazar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circulo"
+            android:text="Rechazar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
