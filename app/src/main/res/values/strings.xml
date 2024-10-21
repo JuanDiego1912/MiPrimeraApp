@@ -2,4 +2,14 @@
     <string name="app_name">MiPrimeraApp</string>
     <string name="saludo">Hola a todo el mundo!</string>
     <string name="msgError">Error. Hardcodear no es bueno</string>
+    <string-array name="provincias">
+        <item>Almería</item>
+        <item>Granada</item>
+        <item>Málaga</item>
+        <item>Jaén</item>
+        <item>Córdoba</item>
+        <item>Sevilla</item>A
+        <item>Cádiz</item>
+        <item>Huelva</item>
+    </string-array>
 </resources>

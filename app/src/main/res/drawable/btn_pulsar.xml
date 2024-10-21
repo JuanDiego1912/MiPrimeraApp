@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Descargar items o iconos desde google fonts y luego en iconos-->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/offline_pin_24px"/>
+
+</selector>

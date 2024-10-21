@@ -29,15 +29,18 @@ class MainActivity : AppCompatActivity() {
         TVsaludo.text = getText(R.string.msgError)
         println(TVsaludo.text)
 
-        TVsaludo.setOnClickListener {
+        /*TVsaludo.setOnClickListener {
             TVsaludo.text = "Me has pulsado!!"
-        }
+        }*/
 
+        //Parametrizaciñón del código usando los resources String.xml
         var actvProvincias = findViewById<AutoCompleteTextView>(R.id.actvProvincias)
-        val aProvincias = arrayOf("Almería", "Granada", "Valencia", "Malaga", "Jaén")
+
+        //Obtengo el string-Array desde los resources
+        val provincias = resources.getStringArray(R.array.provincias)
         var adapter = ArrayAdapter<String>(this,
             android.R.layout.simple_dropdown_item_1line,
-            aProvincias)
+            provincias)
         actvProvincias.setAdapter(adapter)
 
     }
