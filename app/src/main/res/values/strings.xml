@@ -2,6 +2,10 @@
     <string name="app_name">MiPrimeraApp</string>
     <string name="saludo">Hola a todo el mundo!</string>
     <string name="msgError">Error. Hardcodear no es bueno</string>
+    <string name="chipTelefono">Teléfono</string>
+    <string name="chipMensaje">Mensaje</string>
+    <string name="chipVideollamada">Video Llamada</string>
+
     <string-array name="provincias">
         <item>Almería</item>
         <item>Granada</item>

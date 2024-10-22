@@ -10,4 +10,15 @@
     <style name="jdrb">
         <item name="android:drawable">@drawable/btn_pulsar</item>
     </style>
+
+    <!--Buscar la forma de eliminar el aspa o la x del chip-->
+    <style name="MyChipStyle"
+        parent="Widget.MaterialComponents.Chip.Entry">
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">14sp</item>
+            <item name="chipBackgroundColor">@color/blue</item>
+            <item name="chipStrokeColor">@android:color/holo_purple</item>
+            <item name="chipStrokeWidth">2dp</item>
+    </style>
 </resources>

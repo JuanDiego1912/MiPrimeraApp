@@ -3,5 +3,4 @@
     <!--Descargar items o iconos desde google fonts y luego en iconos-->
     <item android:state_pressed="true"
         android:drawable="@drawable/offline_pin_24px"/>
-
 </selector>
