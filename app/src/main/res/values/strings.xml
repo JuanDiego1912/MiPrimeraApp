@@ -4,7 +4,7 @@
     <string name="msgError">Error. Hardcodear no es bueno</string>
     <string name="chipTelefono">Teléfono</string>
     <string name="chipMensaje">Mensaje</string>
-    <string name="chipVideollamada">Video Llamada</string>
+    <string name="chipVideollamada">Videollamada</string>
 
     <string-array name="provincias">
         <item>Almería</item>

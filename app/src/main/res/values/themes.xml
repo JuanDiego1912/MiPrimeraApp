@@ -11,13 +11,15 @@
         <item name="android:drawable">@drawable/btn_pulsar</item>
     </style>
 
-    <!--Buscar la forma de eliminar el aspa o la x del chip-->
+    <!--Buscar la forma de eliminar el aspa o la x del chip.
+    En las partes en la que paso un drawable, estos devolverán un color
+    dependiendo el estado, si esta pulsado o no. Intercambio de colores-->
     <style name="MyChipStyle"
         parent="Widget.MaterialComponents.Chip.Entry">
-            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textColor">@drawable/chippulsar</item>
             <item name="android:textStyle">bold</item>
             <item name="android:textSize">14sp</item>
-            <item name="chipBackgroundColor">@color/blue</item>
+            <item name="chipBackgroundColor">@drawable/chippulsarbg</item>
             <item name="chipStrokeColor">@android:color/holo_purple</item>
             <item name="chipStrokeWidth">2dp</item>
     </style>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Si el chip esta pulsado su letra será de color azul, cuando se deje de pulsar
+    pasará a ser de color blanco-->
+    <item android:state_pressed="true"
+        android:color="@color/blue"/>
+    <item android:state_pressed="false"
+        android:color="@android:color/white"/>
+</selector>
