@@ -21,6 +21,11 @@
         android:id="@+id/darthVaderRemoto"
         android:layout_width="match_parent"
         android:layout_height="275dp"
-        tools:srcCompat="@drawable/darth_vader" />-->
+        tools:src="" />-->
+
+    <CalendarView
+        android:id="@+id/cvCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
