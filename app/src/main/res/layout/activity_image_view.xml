@@ -9,23 +9,29 @@
     tools:context=".ImageViewActivity">
 
     <!--Usar android:src="..." para que las imagenes
-    se muestren al ejecutar la aplicación-->
+    se muestren al ejecutar la aplicación
     <ImageView
         android:id="@+id/darthVaderLocal"
         android:layout_width="match_parent"
         android:layout_height="275dp"
-        android:src="@drawable/darth_vader" />
+        android:src="@drawable/darth_vader" />-->
 
-    <!--
     <ImageView
         android:id="@+id/darthVaderRemoto"
         android:layout_width="match_parent"
         android:layout_height="275dp"
-        tools:src="" />-->
+        tools:src="" />
 
     <CalendarView
         android:id="@+id/cvCalendario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:firstDayOfWeek="2"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"/>
 
 </LinearLayout>
