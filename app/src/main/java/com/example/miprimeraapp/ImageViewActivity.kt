@@ -33,31 +33,32 @@ class ImageViewActivity : AppCompatActivity() {
             tvFecha.text = "Fecha: $day/${month + 1}/$year"
         }
 
-        tvFecha.text = calcular(4,5,::sumar).toString()
+        tvFecha.text = calcular(4,
+            5,
+            ::sumar).toString()
 
+        // Trabajamos con dos datos de tipo Int y devolvemos un Int. Hacemos una resta
+        val resta : (Int, Int) -> Int = { num1, num2 -> num1 - num2 }
 
+        tvFecha.text = calcular(10,
+            5
+        ) { num1, num2 ->
+            num1 - num2 }
+            .toString()
+
+        var array : Array<Int> = arrayOf(1, 2, 3, 4)
+        var arrayEnteros = IntArray(4) { 4 }
+
+        tvFecha.text = arrayEnteros.joinToString()
+
+        setArray(arrayEnteros) {  it * 2 }
 
     }
 
-    // FUNCIONES DE EXTENSIÓN
-    fun String.sinEspacios() : String {
-        return this.replace(" ", "")
+    fun setArray(array : IntArray, fn : (Int) -> Int ) {
+        for (indice in 0..array.size) {
+            array[indice] = fn(indice)
+        }
     }
-
-    // Igual que "hola".repeat(6) pero ahora 6.repeat("hola")
-    fun Int.repeat(cadena : String) = cadena.repeat(this)
-
-    // Devuelvo el contrario del valor Boolean actual
-    fun Boolean.contrario() = !this
-
-    // FUNCIONES DE NIVEL SUPERIOR (ALTO NIVEL)
-    fun calcular(num1: Int,
-                 num2: Int,
-                 fn : (Int, Int) -> Int) : Int {
-        return fn(num1, num2)
-    }
-
-    fun sumar(a : Int, b : Int) = a + b
-
 
 }

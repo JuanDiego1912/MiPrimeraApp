@@ -1,5 +1,6 @@
 package com.example.miprimeraapp
 
+import android.app.Activity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -46,11 +47,8 @@ class ChipActivity : AppCompatActivity() {
                     /* Toast sirve para mostrar un pequeño mensaje por pantalla
                     * con la durración, el texto y en el View que
                     * decidamos */
-                    Toast.makeText(this,
-                        //Casteo it como un objeto Chip y obtengo su texto
-                        "Se ha pulsado ${it.text}",
-                        Toast.LENGTH_SHORT)
-                        .show()
+
+                    toast("Se ha pulsado ${it.text}");
                 }
             }
         }
